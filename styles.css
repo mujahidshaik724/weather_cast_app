@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.container {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 187, 233, 1) 0%,
+    rgba(238, 174, 202, 1) 100%
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+input:focus {
+    outline: none; /* Removes the default focus border */
+    caret-color: rgb(6, 1, 1);
+    font-size: 14px;
+}
+input,
+button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#weatherDetails {
+  margin-top: 20px;
+  font-size: 18px;
+}
+#weatherCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.weather-card {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(162, 148, 233, 1) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle border to add definition */
+  border-radius: 10px; /* Smooth rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animations */
+  text-align: center; /* Center align content */
+}
+
+.weather-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover effect */
+}
+
+.weather-card h3 {
+  color: #1b1a1a; /* Darker text for readability */
+  margin-bottom: 10px;
+}
+
+.weather-card p {
+  color: #272626; /* Muted text for clean look */
+  font-size: 14px;
+  line-height: 1;
+}
+
+.weather-card button.delete-btn {
+  background: #ff6b6b; /* Vibrant red button */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.weather-card button.delete-btn:hover {
+  background: #e63946; /* Darker red on hover */
+}
