@@ -1,21 +1,23 @@
-##Weather App
+## Weather App
+
 This is a simple JavaScript-based Weather Application that allows users to search for weather details of multiple cities and view them in a card layout. The app utilizes the OpenWeather API for real-time weather data.
 
-Features
-City-based Weather Search: Enter city names to fetch their weather information.
+# Features
 
-LocalStorage Integration: Persistently saves searched city names for later access.
+- City-based Weather Search: Enter city names to fetch their weather information.
 
-Dynamic Weather Cards: Displays detailed weather information, including:
+- LocalStorage Integration: Persistently saves searched city names for later access.
 
-Temperature
+- Dynamic Weather Cards: Displays detailed weather information, including:
 
-Weather description
+1. Temperature
 
-Humidity
+2. Weather description
 
-Wind speed
+3. Humidity
 
-Error Handling: Displays an error message if a city's weather data can't be fetched.
+4. Wind speed
 
-Delete Functionality: Remove cities from the weather cards and localStorage.
+- Error Handling: Displays an error message if a city's weather data can't be fetched.
+
+- Delete Functionality: Remove cities from the weather cards and localStorage.
