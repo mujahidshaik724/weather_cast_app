@@ -1,3 +1,4 @@
+//Creating the DOM elements
 const fetchWeatherBtn = document.getElementById("fetchWeatherBtn");
 const cityInput = document.getElementById("cityInput");
 const weatherCards = document.getElementById("weatherCards");
@@ -16,7 +17,7 @@ function saveCityNames() {
 // Function to render weather cards
 function renderWeather() {
   weatherCards.innerHTML = ""; // Clear existing cards
-
+  
   cityNames.forEach((city) => {
     const url = `${apiBaseUrl}?q=${encodeURIComponent(
       city
